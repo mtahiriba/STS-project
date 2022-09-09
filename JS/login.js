@@ -3,6 +3,11 @@ accounts = [
         id: 1,
         inchargeid: "023-19-0144",
         password: "123"
+    },
+    {
+        id: 2,
+        inchargeid: "023-18-0082",
+        password: "12345"
     }
 ]
 
@@ -12,8 +17,6 @@ var btn = document.getElementsByClassName('btn2')[0]
 btn.addEventListener('click', function(){
     id = document.getElementById('ID').value
     pass = document.getElementById('Password').value
-    checkbox = document.getElementById('check')
-    console.log(checkbox)
 
     accounts.forEach(acc => {
         if(acc.inchargeid === id && acc.password === pass){
